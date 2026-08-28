@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nubeluz | Moldes de Confección</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="pagina">
+      <section class="presentacion">
+        <p class="etiqueta">NUBELUZ · MOLDES DE CONFECCIÓN</p>
+        <h1>Asesoría para tus prendas</h1>
+        <p>
+          Consulta nuestros moldes, servicios de confección y proceso de pedido.
+          Estamos aquí para convertir tus ideas en prendas.
+        </p>
+      </section>
+
+      <section class="chatbot-rectangular" aria-label="Chatbot rectangular">
+        <div class="chat-cabecera">
+          <span class="avatar">🤖</span>
+          <div>
+            <h2>Nubeluz Asistente</h2>
+            <p><span class="estado"></span> En línea</p>
+          </div>
+        </div>
+        <div class="mensajes" id="mensajesRectangular" aria-live="polite">
+          <div class="mensaje bot">¡Hola! Bienvenida a Nubeluz. ¿Buscas un molde, asesoría o hacer un pedido?</div>
+        </div>
+        <div class="opciones" id="opcionesRectangular">
+          <button type="button">Moldes</button>
+          <button type="button">Servicios</button>
+          <button type="button">Pedidos</button>
+        </div>
+        <form class="formulario" id="formularioRectangular">
+          <input id="entradaRectangular" type="text" placeholder="Escribe tu mensaje..." autocomplete="off" required />
+          <button aria-label="Enviar mensaje" type="submit">➤</button>
+        </form>
+      </section>
+    </main>
+
+    <button class="burbuja" id="abrirChat" aria-label="Abrir chatbot">💬</button>
+
+    <section class="chat-flotante oculto" id="chatFlotante" aria-label="Chatbot en burbuja">
+      <div class="chat-cabecera">
+          <span class="avatar">🧵</span>
+        <div>
+          <h2>Nubeluz</h2>
+          <p><span class="estado"></span> Disponible</p>
+        </div>
+        <button class="cerrar" id="cerrarChat" aria-label="Cerrar chatbot">×</button>
+      </div>
+      <div class="mensajes" id="mensajesFlotante" aria-live="polite">
+        <div class="mensaje bot">¡Hola! ¿En qué podemos ayudarte con tu proyecto de confección?</div>
+      </div>
+      <form class="formulario" id="formularioFlotante">
+        <input id="entradaFlotante" type="text" placeholder="Escribe aquí..." autocomplete="off" required />
+        <button aria-label="Enviar mensaje" type="submit">➤</button>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
